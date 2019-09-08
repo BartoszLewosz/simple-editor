@@ -2,15 +2,30 @@
 @import "_variables";
 
 
-html {
-  box-sizing: border-box;
+html, body {
+	background-color: #ede7d9;
+	height: 100%;
+	padding: 8px;
+  margin: 0;
 }
 
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-body {
-  color: $yellow;
-  background: $violet;
+.header {
+  text-align: center;
 }
+
+.main {
+  background: $red;
+  width: 50%;
+  height: 70%;
+  border-radius: 15px;
+  margin: 24px auto;
+  &__title {
+    text-align: center;
+    color: $gray;
+  }
+}
+
