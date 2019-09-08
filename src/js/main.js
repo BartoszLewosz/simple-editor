@@ -20,3 +20,26 @@ if ('serviceWorker' in navigator) {
 console.log(`Hello world!`);
 
 
+const text_input = document.querySelector('.input__box--js');
+
+// if (localStorage.getItem('text_input')) {
+//   text_input.value = localStorage.getItem('text_input')
+// }
+
+// text_input.addEventListener('keyup', (e) => {
+//   localStorage.setItem('text_input', e.target.value);
+// })
+
+const save_button = document.querySelector('.input__save--js');
+
+
+function save_input() {
+  console.log('Hello..?!');
+}
+
+save_input()
+
+save_button.addEventListener('keyup', (e) => {
+  localStorage.setItem('text_input', e.target.value);
+});
+
