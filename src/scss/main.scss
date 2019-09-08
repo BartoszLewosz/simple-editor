@@ -18,9 +18,10 @@ html, body {
 
 .main {
   background: $red;
-  height: 70%;
   border-radius: 15px;
-  padding: 16px;
+  padding: 8px;
+  max-width: 75%;
+  max-height: 75%;
   margin: 24px auto;
   &__title {
     text-align: center;
@@ -30,7 +31,6 @@ html, body {
 .input {
   padding: 8px;
   box-sizing: border-box;
-  width: 80%;
 }
 
 .input__box {
