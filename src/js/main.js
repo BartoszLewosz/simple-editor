@@ -17,12 +17,8 @@ if ('serviceWorker' in navigator) {
 // place your code below
 
 
-console.log(`Hello world!`);
 
 
-const text_input = document.querySelector('.input__box--js');
-const save_button = document.querySelector('.input__save--js');
-const load_button = document.querySelector('.input__load--js');
 
 // if (localStorage.getItem('text_input')) {
 //   text_input.value = localStorage.getItem('text_input')
