@@ -21,6 +21,8 @@ console.log(`Hello world!`);
 
 
 const text_input = document.querySelector('.input__box--js');
+const save_button = document.querySelector('.input__save--js');
+const load_button = document.querySelector('.input__load--js');
 
 // if (localStorage.getItem('text_input')) {
 //   text_input.value = localStorage.getItem('text_input')
@@ -30,16 +32,18 @@ const text_input = document.querySelector('.input__box--js');
 //   localStorage.setItem('text_input', e.target.value);
 // })
 
-const save_button = document.querySelector('.input__save--js');
 
 
-function save_input() {
-  console.log('Hello..?!');
-}
 
-save_input()
 
-save_button.addEventListener('keyup', (e) => {
-  localStorage.setItem('text_input', e.target.value);
+save_button.addEventListener('click', () => {
+  localStorage.setItem('text_input', text_input.value);
 });
+
+load_button.addEventListener('click', (e) => {
+  e.preventDefault();
+  text_input.innerHTML = localStorage.getItem('text_input', text_input.value);
+  console.log(text_input.value);
+});
+
 
