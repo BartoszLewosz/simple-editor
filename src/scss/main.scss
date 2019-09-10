@@ -1,51 +1,85 @@
 @import "_normalize";
 @import "_variables";
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap&subset=latin-ext');
 
-
-html, body {
-  min-height: 100vh;
-	padding: 16px;
-  margin: 0;
+html {
+  box-sizing: border-box;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-.header {
-  text-align: center;
+body {
+  color: $violet;
+  background: $gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 20px;
 }
 
 .main {
-  background: $red;
-  border-radius: 15px;
-  padding: 8px;
-  max-width: 75%;
-  max-height: 75%;
-  margin: 24px auto;
-  &__title {
+  max-width: 768px;
+  max-width: 100%;
+  background: #FF6347;
+  border: 1px solid #787A21;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  padding: 32px;
+}
+
+.header {
+  font-size: 44px;
+}
+
+.form {
+  &__actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__button {
+    border-radius: 8px;
+    background: $violet;
+    min-width: 150px;
+    letter-spacing: 0.8px;
+    padding: 8px;   
+    &--save {
+      color: $gray;
+    }
+    &--load {
+      background: $gray;
+    }
+  }
+  &__text_input {
+    padding: 24px;
+  }
+  &__label {
+    display: block;
+    font-weight: 600;
+    margin: 16px;
     text-align: center;
-    color: $gray;
+  }
+  &__text_input {
+    width: 100%;
+    border-radius: 8px;
+    background: #C4C4C4;
+    border: 1px solid #64611B;
+    min-height: 30vh;
+  }
+  &__actions {
+    display: flex;
+    align-content: space-between;
   }
 }
-.input {
-  padding: 8px;
-  box-sizing: border-box;
-}
 
-.input__box {
-  align-content: center;
-  padding: 8px;
-  margin: 24px;
+.footer {
+  margin-top: 24px;
+  text-align: center;  
+  font-variant-caps: all-small-caps;
+  font-size: 0.7em;
+  letter-spacing: 0.8px;
+  color: $violet;
 }
-
-.input__button {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-
-.input__save, .input__load {
-  margin: 4px;
-}
-
