@@ -28,23 +28,26 @@
 
 <body>
   <header class="header">
-    <h1 class="header__title">simple-editor</h1>
+    <h2>
+      Simple-editor
+    </h2>
   </header>
-
   <main class="main">
-    <section class="main__title">TEXT INPUT</section>
-    <div class="input">
-      <input class="input__box input__box--js">
-      <div class="input__button">
-        <button type="submit" class="input__load">Load</button>
-        <button class="input__save input__save--js">Save</button>
+    <form class="form">
+      <p>
+        <label class="form__label" for="text_input">TEXT INPUT</label>
+        <textarea class="form__text" id="text_input">
+          Enter your text
+        </textarea>
+      </p>
+      <div class="form__actions">
+        <button class="form__button form__button--load form__button--load-js">LOAD</button>
+        <button class="form__button form__button--save form__button--save-js">SAVE</button>
       </div>
 
-    </div>
-
+    </form>
   </main>
-
-
+  <footer class="footer">Made by Bartosz</footer>
   <script src="js/main.js"></script>
 </body>
 
