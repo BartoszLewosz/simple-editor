@@ -29,17 +29,25 @@ if ('serviceWorker' in navigator) {
 // })
 
 
+const text_input = document.querySelector('.form__text_input--js');
+const save_button = document.querySelector('.form__button--save-js');
+const load_button = document.querySelector('.form__button--load-js');
+const clear_button = document.querySelector('.form__button--clear-js');
 
 
-
-save_button.addEventListener('click', () => {
-  localStorage.setItem('text_input', text_input.value);
-});
+save_button.addEventListener('click', (e) => {
+  //e.preventDefault();
+  localStorage.setItem('text_input', text_input.value)
+})
 
 load_button.addEventListener('click', (e) => {
   e.preventDefault();
-  text_input.innerHTML = localStorage.getItem('text_input', text_input.value);
-  console.log(text_input.value);
-});
+  text_input.innerHTML = localStorage.getItem('text_input', text_input.value)
+})
+
+clear_button.addEventListener('click', (e) => {
+  e.preventDefault();
+  localStorage.clear();
+})
 
 
