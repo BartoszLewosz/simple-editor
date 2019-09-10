@@ -43,13 +43,13 @@ body {
   &__button {
     border-radius: 8px;
     background: $violet;
-    min-width: 150px;
+    min-width: 100px;
     letter-spacing: 0.8px;
     padding: 8px;   
     &--save {
       color: $gray;
     }
-    &--load {
+    &--load, &--clear {
       background: $gray;
     }
   }
