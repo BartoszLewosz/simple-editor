@@ -42,15 +42,30 @@ body {
   }
   &__button {
     border-radius: 8px;
-    background: $violet;
     min-width: 100px;
     letter-spacing: 0.8px;
-    padding: 8px;   
+    padding: 8px;
+    cursor: pointer;
+    transition: transform .3s ease-in-out;
+    &:hover {
+      transform: scale(1.05);
+    }   
     &--save {
+      background: $violet;
       color: $gray;
+      transition: background .2s ease-in-out;
+      &:hover {
+        background: $gray;
+        color: $violet;
+      }
     }
     &--load, &--clear {
       background: $gray;
+      transition: background .2s ease-in-out;
+      &:hover {
+        background: $violet;
+        color: $gray;
+      }
     }
   }
   &__text_input {
