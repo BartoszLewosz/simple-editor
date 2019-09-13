@@ -83,3 +83,17 @@ body {
   letter-spacing: 0.8px;
   color: $violet;
 }
+
+.animation_test {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  background: green;
+  height: 50px;
+//   animation: background_change 3s linear infinite;
+  transition: transform 5s ease-in-out;
+  &:hover {
+   transform: scale(1.2)
+   }
+ }
