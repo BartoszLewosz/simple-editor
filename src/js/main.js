@@ -46,7 +46,6 @@ load_button.addEventListener('click', (e) => {
 })
 
 clear_button.addEventListener('click', (e) => {
-  e.preventDefault();
   localStorage.clear();
 })
 
