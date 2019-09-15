@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Site title</title>
+  <meta name="description" content="Description" />
+
+  <!-- Title -->
+  <meta property="og:title" content="" />
+  <!-- OPTIONAL description. 2-4 sentences. -->
+  <meta property="og:description" content="" />
+  <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
+  <meta property="og:url" content="" />
+  <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
+  <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
+
+  <link rel="manifest" href="manifest.json" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link rel="apple-touch-icon" sizes="192x192" href="assets/pwa/icons/icon-192x192.png" />
+
+  <link rel="icon" type="image/png" href="assets/pwa/icons/icon-192x192.png" />
+
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <main class="main">
+    <header class="header">
+      <h2>
+        Simple-editor
+      </h2>
+    </header>
+    <form class="form">
+      <p class="form__wrapper">
+        <label class="form__label" for="text_input">TEXT INPUT</label>
+        <textarea class="form__text_input form__text_input form__text_input--js"
+        id="text_input" placeholder="Enter your text"></textarea>
+      </p>
+      <div class="form__actions">
+        <button class="form__button form__button--load form__button--load-js">LOAD</button>
+        <button class="form__button form__button--clear form__button--clear-js">clear local storage</button>
+        <button class="form__button form__button--save form__button--save-js">SAVE</button>
+      </div>
+
+    </form>
+    <footer class="footer">Made by Bartosz</footer>
+    <div class="animation_test">Test</div>
+  </main>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
