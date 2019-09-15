@@ -5,22 +5,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Site title</title>
+  <title>Simple Editor</title>
   <meta name="description" content="Description" />
 
   <!-- Title -->
-  <meta property="og:title" content="" />
+  <meta property="og:title" content="Simple Editor" />
   <!-- OPTIONAL description. 2-4 sentences. -->
-  <meta property="og:description" content="" />
+  <meta property="og:description" content="Simple editor that saves
+  your input to local storage." />
   <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-  <meta property="og:url" content="" />
+  <meta property="og:url" content="https://bartoszlewosz.github.io/simple-editor/" />
   <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
   <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
+
 
   <link rel="manifest" href="manifest.json" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <link rel="apple-touch-icon" sizes="192x192" href="assets/pwa/icons/icon-192x192.png" />
-
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
   <link rel="icon" type="image/png" href="assets/pwa/icons/icon-192x192.png" />
 
   <link rel="stylesheet" href="css/main.css" />
@@ -36,8 +38,8 @@
     <form class="form">
       <p class="form__wrapper">
         <label class="form__label" for="text_input">TEXT INPUT</label>
-        <textarea class="form__text_input form__text_input form__text_input--js"
-        id="text_input" placeholder="Enter your text"></textarea>
+        <textarea class="form__text_input form__text_input form__text_input--js" id="text_input"
+          placeholder="Enter your text"></textarea>
       </p>
       <div class="form__actions">
         <button class="form__button form__button--load form__button--load-js">LOAD</button>
