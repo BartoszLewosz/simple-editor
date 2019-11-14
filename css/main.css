@@ -313,7 +313,9 @@ html {
           box-sizing: border-box;
   font-family: 'Titillium Web', sans-serif; }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit; }
 
@@ -416,22 +418,5 @@ body {
   font-size: 0.7em;
   letter-spacing: 0.8px;
   color: #000; }
-
-.animation_test {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 50px;
-  background: green;
-  height: 50px;
-  -webkit-transition: -webkit-transform 5s ease-in-out;
-  transition: -webkit-transform 5s ease-in-out;
-  -o-transition: transform 5s ease-in-out;
-  transition: transform 5s ease-in-out;
-  transition: transform 5s ease-in-out, -webkit-transform 5s ease-in-out; }
-  .animation_test:hover {
-    -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-            transform: scale(1.2); }
 
 /*# sourceMappingURL=main.css.map */
