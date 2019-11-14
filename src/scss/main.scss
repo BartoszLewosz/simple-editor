@@ -1,114 +1,102 @@
 @import "_normalize";
 @import "_variables";
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap&subset=latin-ext');
-
 html {
-  box-sizing: border-box;
-  font-family: 'Titillium Web', sans-serif;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 
 body {
-  color: $violet;
-  background: $gray;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  margin: 20px;
+    color: $violet;
+    background: $gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 20px;
 }
 
 .main {
-  max-width: 768px;
-  max-width: 100%;
-  background: #FF6347;
-  border: 1px solid #787A21;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 8px;
-  padding: 32px;
+    max-width: 768px;
+    max-width: 100%;
+    background: #FF6347;
+    border: 1px solid #787A21;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    padding: 32px;
 }
 
 .header {
-  font-size: 44px;
+    font-size: 44px;
 }
 
 .form {
-  &__actions {
-    display: flex;
-    justify-content: space-between;
-  }
-  &__button {
-    border-radius: 8px;
-    min-width: 100px;
-    letter-spacing: 0.8px;
-    padding: 8px;
-    cursor: pointer;
-    transition: transform .3s ease-in-out;
-    &:hover {
-      transform: scale(1.05);
-    }   
-    &--save {
-      background: $violet;
-      color: $gray;
-      transition: background .2s ease-in-out;
-      &:hover {
-        background: $gray;
-        color: $violet;
-      }
+    &__actions {
+        display: flex;
+        justify-content: space-between;
     }
-    &--load, &--clear {
-      background: $gray;
-      transition: background .2s ease-in-out;
-      &:hover {
-        background: $violet;
-        color: $gray;
-      }
+    &__button {
+        border-radius: 8px;
+        min-width: 100px;
+        letter-spacing: 0.8px;
+        padding: 8px;
+        cursor: pointer;
+        transition: transform .3s ease-in-out;
+        &:hover {
+            transform: scale(1.05);
+        }
+        &--save {
+            background: $violet;
+            color: $gray;
+            transition: background .2s ease-in-out;
+            &:hover {
+                background: $gray;
+                color: $violet;
+            }
+        }
+        &--load,
+        &--clear {
+            background: $gray;
+            transition: background .2s ease-in-out;
+            &:hover {
+                background: $violet;
+                color: $gray;
+            }
+        }
     }
-  }
-  &__text_input {
-    padding: 24px;
-  }
-  &__label {
-    display: block;
-    font-weight: 600;
-    margin: 16px;
-    text-align: center;
-  }
-  &__text_input {
-    width: 100%;
-    border-radius: 8px;
-    background: #C4C4C4;
-    border: 1px solid #64611B;
-    min-height: 30vh;
-  }
-  &__actions {
-    display: flex;
-    align-content: space-between;
-  }
+    &__text_input {
+        padding: 24px;
+    }
+    &__label {
+        display: block;
+        font-weight: 600;
+        margin: 16px;
+        text-align: center;
+    }
+    &__text_input {
+        width: 100%;
+        border-radius: 8px;
+        background: #C4C4C4;
+        border: 1px solid #64611B;
+        min-height: 30vh;
+    }
+    &__actions {
+        display: flex;
+        align-content: space-between;
+    }
 }
 
 .footer {
-  margin-top: 24px;
-  text-align: center;  
-  font-variant-caps: all-small-caps;
-  font-size: 0.7em;
-  letter-spacing: 0.8px;
-  color: $violet;
+    margin-top: 24px;
+    text-align: center;
+    font-variant-caps: all-small-caps;
+    font-size: 0.7em;
+    letter-spacing: 0.8px;
+    color: $violet;
 }
-
-.animation_test {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 50px;
-  background: green;
-  height: 50px;
-//   animation: background_change 3s linear infinite;
-  transition: transform 5s ease-in-out;
-  &:hover {
-   transform: scale(1.2)
-   }
- }
